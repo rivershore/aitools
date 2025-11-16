@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Library - Discover the Best AI Applications</title>
+    <meta name="description" content="Comprehensive directory of AI tools and applications with detailed reviews, tutorials, and exclusive deals.">
+    <meta name="keywords" content="AI tools, artificial intelligence, machine learning, AI applications, AI software, Simplified AI">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="AI Tools Library - Discover the Best AI Applications">
+    <meta property="og:description" content="Comprehensive directory of AI tools and applications with detailed reviews, tutorials, and exclusive deals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aitoolslibrary.com">
+    <meta property="og:image" content="https://aitoolslibrary.com/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Tools Library - Discover the Best AI Applications">
+    <meta name="twitter:description" content="Comprehensive directory of AI tools and applications with detailed reviews, tutorials, and exclusive deals.">
+    <meta name="twitter:image" content="https://aitoolslibrary.com/images/twitter-image.jpg">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AI Tools Library",
+      "url": "https://aitoolslibrary.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://aitoolslibrary.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #4361ee;
+            --primary-dark: #3a56d4;
+            --secondary: #7209b7;
+            --accent: #f72585;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --success: #4cc9f0;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--secondary);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5a08a0;
+        }
+        
+        .btn-accent {
+            background-color: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background-color: #e11574;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .logo i {
+            margin-right: 8px;
+            font-size: 28px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            font-weight: 500;
+            color: var(--dark);
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        /* Featured Tools Section */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .tool-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .tool-image {
+            height: 180px;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: var(--primary);
+        }
+        
+        .tool-content {
+            padding: 20px;
+        }
+        
+        .tool-category {
+            display: inline-block;
+            background-color: var(--light-gray);
+            color: var(--gray);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .tool-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        .tool-description {
+            color: var(--gray);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        
+        .tool-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+        
+        .tool-rating {
+            color: #ffc107;
+        }
+        
+        /* Categories Section */
+        .categories {
+            background-color: var(--light-gray);
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .category-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-icon {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .category-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .category-count {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Blog Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .blog-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-image {
+            height: 200px;
+            background-color: var(--light-gray);
+        }
+        
+        .blog-content {
+            padding: 20px;
+        }
+        
+        .blog-meta {
+            display: flex;
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 10px;
+        }
+        
+        .blog-meta span {
+            margin-right: 15px;
+        }
+        
+        .blog-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        .blog-excerpt {
+            color: var(--gray);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a {
+            color: #adb5bd;
+            transition: var(--transition);
+        }
+        
+        .footer-col ul li a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #343a40;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: #343a40;
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        .pagination-list {
+            display: flex;
+            list-style: none;
+        }
+        
+        .pagination-item {
+            margin: 0 5px;
+        }
+        
+        .pagination-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            color: var(--dark);
+            font-weight: 500;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .pagination-link:hover, .pagination-link.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px 0;
+            }
+            
+            nav {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            nav.active {
+                transform: translateY(0);
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 20px;
+            }
+            
+            nav ul li {
+                margin: 0 0 15px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-btns .btn {
+                width: 100%;
+                max-width: 250px;
+                margin-bottom: 10px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .tools-grid, .categories-grid, .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-robot"></i>
+                    AI<span>Tools</span>
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">AI Tools</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Discover the Future of Productivity with AI Tools</h1>
+            <p>Explore our comprehensive library of artificial intelligence applications designed to enhance your workflow, creativity, and business operations.</p>
+            <div class="hero-btns">
+                <a href="products.html" class="btn">Browse AI Tools</a>
+                <a href="blog.html" class="btn btn-outline">Read Our Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured AI Tools</h2>
+                <p>Handpicked selection of the most innovative and effective AI applications available today</p>
+            </div>
+            
+            <div class="tools-grid">
+                <!-- Tool Card 1 - Simplified AI -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <div class="tool-content">
+                        <span class="tool-category">Content Creation</span>
+                        <h3 class="tool-title">Simplified AI</h3>
+                        <p class="tool-description">All-in-one AI platform for content creation, design, and marketing. Generate text, images, videos, and more with AI assistance.</p>
+                        <a href="https://simplified.com?fpr=getoffer" class="btn btn-accent" target="_blank">Try Simplified AI</a>
+                        <div class="tool-meta">
+                            <div class="tool-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7</span>
+                            </div>
+                            <div class="tool-price">Freemium</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 2 - Simplified Graphic Design -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="tool-content">
+                        <span class="tool-category">Graphic Design</span>
+                        <h3 class="tool-title">Simplified Graphic Design</h3>
+                        <p class="tool-description">AI-powered graphic design tool with templates, image editing, and creative assets for all your design needs.</p>
+                        <a href="https://simplified.com/graphic-design?fpr=getoffer" class="btn btn-accent" target="_blank">Explore Design Tools</a>
+                        <div class="tool-meta">
+                            <div class="tool-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.2</span>
+                            </div>
+                            <div class="tool-price">Freemium</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 3 - Simplified AI Image Generator -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="tool-content">
+                        <span class="tool-category">Image Generation</span>
+                        <h3 class="tool-title">Simplified AI Image Generator</h3>
+                        <p class="tool-description">Create stunning AI-generated images from text prompts with various artistic styles and customization options.</p>
+                        <a href="https://simplified.com/ai-image-generator/3d-shapes-art?fpr=getoffer" class="btn btn-accent" target="_blank">Generate Images</a>
+                        <div class="tool-meta">
+                            <div class="tool-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <div class="tool-price">Freemium</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="products.html" class="btn btn-secondary">View All AI Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>AI Tool Categories</h2>
+                <p>Browse our organized collection of AI applications by category to find exactly what you need</p>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Category 1 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3 class="category-title">Content Creation</h3>
+                    <p class="category-count">24 Tools</p>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="category-title">Graphic Design</h3>
+                    <p class="category-count">18 Tools</p>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3 class="category-title">Image Generation</h3>
+                    <p class="category-count">15 Tools</p>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-crop-alt"></i>
+                    </div>
+                    <h3 class="category-title">Image Editing</h3>
+                    <p class="category-count">12 Tools</p>
+                </div>
+                
+                <!-- Category 5 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="category-title">AI Art & Design</h3>
+                    <p class="category-count">9 Tools</p>
+                </div>
+                
+                <!-- Category 6 -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="category-title">AI Assistants</h3>
+                    <p class="category-count">21 Tools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Tools Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Specialized AI Design Tools</h2>
+                <p>Discover specialized AI-powered tools for specific design and content creation tasks</p>
+            </div>
+            
+            <div class="tools-grid">
+                <!-- Tool Card 1 - Image to URL -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <div class="tool-content">
+                        <span class="tool-category">Image Tools</span>
+                        <h3 class="tool-title">Image to URL Converter</h3>
+                        <p class="tool-description">Instantly convert your images to shareable URLs for easy online sharing and embedding.</p>
+                        <a href="https://simplified.com/graphic-design/image-to-url?fpr=getoffer" class="btn btn-accent" target="_blank">Convert Images</a>
+                        <div class="tool-meta">
+                            <div class="tool-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="tool-price">Free</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 2 - Crop Image -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <i class="fas fa-crop-alt"></i>
+                    </div>
+                    <div class="tool-content">
+                        <span class="tool-category">Image Editing</span>
+                        <h3 class="tool-title">AI Image Cropper</h3>
+                        <p class="tool-description">Smart cropping tool that uses AI to automatically identify and crop the most important parts of your images.</p>
+                        <a href="https://simplified.com/graphic-design/crop-image?fpr=getoffer" class="btn btn-accent" target="_blank">Crop Images</a>
+                        <div class="tool-meta">
+                            <div class="tool-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                            <div class="tool-price">Free</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 3 - Spotify Playlist Cover -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <i class="fab fa-spotify"></i>
+                    </div>
+                    <div class="tool-content">
+                        <span class="tool-category">Social Media</span>
+                        <h3 class="tool-title">Spotify Playlist Cover Maker</h3>
+                        <p class="tool-description">Create eye-catching Spotify playlist covers with AI-powered design templates and customization options.</p>
+                        <a href="https://simplified.com/graphic-design/spotify-playlist-cover?fpr=getoffer" class="btn btn-accent" target="_blank">Design Covers</a>
+                        <div class="tool-meta">
+                            <div class="tool-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <div class="tool-price">Free</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="products.html" class="btn btn-secondary">View All Design Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest AI Insights</h2>
+                <p>Stay updated with the latest trends, tutorials, and news in the world of artificial intelligence</p>
+            </div>
+            
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-user"></i> Alex Johnson</span>
+                        </div>
+                        <h3 class="blog-title">How AI is Revolutionizing Content Marketing in 2023</h3>
+                        <p class="blog-excerpt">Discover the latest AI tools and strategies that are transforming how businesses approach content creation and distribution.</p>
+                        <a href="blog-ai-content-marketing.html" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 8, 2023</span>
+                            <span><i class="far fa-user"></i> Sarah Chen</span>
+                        </div>
+                        <h3 class="blog-title">Top 5 AI Tools for Small Business Productivity</h3>
+                        <p class="blog-excerpt">Explore affordable AI solutions that can help small businesses automate tasks, analyze data, and improve efficiency.</p>
+                        <a href="blog-ai-small-business.html" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> May 30, 2023</span>
+                            <span><i class="far fa-user"></i> Michael Torres</span>
+                        </div>
+                        <h3 class="blog-title">The Ethics of AI: Balancing Innovation and Responsibility</h3>
+                        <p class="blog-excerpt">A deep dive into the ethical considerations surrounding AI development and implementation in various industries.</p>
+                        <a href="blog-ai-ethics.html" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="blog.html" class="btn btn-secondary">View All Blog Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Workflow with AI?</h2>
+            <p>Join thousands of professionals who are already leveraging artificial intelligence to save time, increase productivity, and drive innovation.</p>
+            <a href="products.html" class="btn btn-accent">Explore All AI Tools</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>AI Tools</h3>
+                    <p>Your comprehensive directory for discovering, comparing, and implementing the best artificial intelligence applications.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">AI Tools</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="affiliate.html">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to receive updates on new AI tools and industry insights.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: none;">
+                        <button type="submit" class="btn" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 AI Tools Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('#mainNav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mainNav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
