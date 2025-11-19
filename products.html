@@ -163,6 +163,14 @@
             color: var(--primary);
         }
         
+        nav ul li a.active {
+            color: var(--primary);
+        }
+        
+        nav ul li a.active::after {
+            width: 100%;
+        }
+        
         nav ul li a::after {
             content: '';
             position: absolute;
@@ -365,10 +373,11 @@
         .pagination-list {
             display: flex;
             list-style: none;
+            gap: 10px;
         }
         
         .pagination-item {
-            margin: 0 5px;
+            margin: 0;
         }
         
         .pagination-link {
@@ -377,7 +386,7 @@
             justify-content: center;
             width: 40px;
             height: 40px;
-            border-radius: 50%;
+            border-radius: var(--border-radius);
             background-color: white;
             color: var(--dark);
             font-weight: 500;
@@ -388,6 +397,16 @@
         .pagination-link:hover, .pagination-link.active {
             background-color: var(--primary);
             color: white;
+        }
+        
+        .pagination-link.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .pagination-link.disabled:hover {
+            background-color: white;
+            color: var(--dark);
         }
         
         /* CTA Section */
@@ -552,6 +571,11 @@
             .section {
                 padding: 40px 0;
             }
+            
+            .pagination-list {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
         
         @media (max-width: 576px) {
@@ -562,6 +586,12 @@
             .footer-container {
                 grid-template-columns: 1fr;
                 gap: 30px;
+            }
+            
+            .pagination-link {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -927,16 +957,22 @@
             <div class="pagination">
                 <ul class="pagination-list">
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link active">1</a>
+                        <a href="products.html" class="pagination-link active">1</a>
                     </li>
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link">2</a>
+                        <a href="products-02.html" class="pagination-link">2</a>
                     </li>
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link">3</a>
+                        <a href="products-03.html" class="pagination-link">3</a>
                     </li>
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link">Next</a>
+                        <a href="products-04.html" class="pagination-link">4</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="products-05.html" class="pagination-link">5</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="products-02.html" class="pagination-link">Next <i class="fas fa-chevron-right"></i></a>
                     </li>
                 </ul>
             </div>
@@ -1057,6 +1093,15 @@
                     card.style.display = 'none';
                 }
             });
+        });
+        
+        // Active navigation highlighting
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinksAll = document.querySelectorAll('nav a');
+        navLinksAll.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
         });
     </script>
 </body>
